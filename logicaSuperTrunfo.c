@@ -11,15 +11,8 @@ int main() {
     char estado2[50], codigo2[50], cidade2[50];
     int pontosturisticos,pontosturisticos2;
     unsigned int populacao, populacao2;
-    float area, pib;
-    float area2, pib2;
-    double densidadepopulacional, densidadepopulacional2;
-    double pibpercapita, pibpercapita2;
-
-    densidadepopulacional = populacao / area;
-    densidadepopulacional2 = populacao2 / area2;
-    pibpercapita = (pib / populacao);
-    pibpercapita2 = (pib2 / populacao2);
+    double area, pib;
+    double area2, pib2;
 
 
     printf("Bem vindo ao Jogo SUPER TRUNFO! Nessa fase Inicial Voce, usuario vai cadastrar 02(Duas) \n"); 
@@ -95,17 +88,17 @@ int main() {
     printf(". \n");
 
     
-    if (densidadepopulacional > densidadepopulacional2)
+    if (populacao > populacao2)
     {
-        printf("Carta 1 - %s: %.2f\n", cidade, densidadepopulacional);
-        printf("carta 2 - %s: %.2f\n", cidade2, densidadepopulacional2);
-        printf("Resultado: Carta 2 %s Venceu!\n", cidade2);
+        printf("Carta 1 - %s: %d\n", cidade, populacao);
+        printf("carta 2 - %s: %d\n", cidade2, populacao2);
+        printf("Resultado: Carta 1 %s Venceu!\n", cidade);
     }
     else
     {
-        printf("Carta 1 - %s: %.2f\n", cidade, densidadepopulacional);
-        printf("carta 2 - %s: %.2f\n", cidade2, densidadepopulacional2);
-        printf("Resultado: Carta 1 %s Venceu!\n", cidade);
+        printf("Carta 1 - %s: %.2f\n", cidade, populacao);
+        printf("carta 2 - %s: %.2f\n", cidade2, populacao2);
+        printf("Resultado: Carta 2 %s Venceu!\n", cidade2);
     }
 
     return 0;
