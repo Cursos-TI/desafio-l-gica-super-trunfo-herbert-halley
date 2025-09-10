@@ -94,55 +94,18 @@ int main() {
     printf(". \n");
     printf(". \n");
 
-    printf("CARTAS CADASTRADAS COM SUCESSO!!!");
-
-    printf(". \n");
-    printf(". \n");
-    printf(". \n");
-
-    if (populacao > populacao2)
-    {
-        printf("Resultado: Carta 1 %s Venceu!\n", cidade);
-    }
-    else
-    {
-        printf("Resultado: Carta 2 %s Venceu!\n", cidade2);
-    }
-    
-    if (area > area2)
-    {
-        printf("Resultado: Carta 1 %s Venceu!\n", cidade);
-    }
-    else
-    {
-        printf("Resultado: Carta 2 %s Venceu!\n", cidade2);
-    }
-    
-    if (pib < pib2)
-    {
-        printf("Resultado: Carta 1 %s Venceu!\n", cidade);
-    }
-    else
-    {
-        printf("Resultado: Carta 2 %s Venceu!\n", cidade2);
-    }
     
     if (densidadepopulacional > densidadepopulacional2)
     {
+        printf("Carta 1 - %s: %f\n", cidade, densidadepopulacional);
+        printf("carta 2 - %s: %f\n", cidade2, densidadepopulacional2);
         printf("Resultado: Carta 2 %s Venceu!\n", cidade2);
     }
     else
     {
+        printf("Carta 1 - %s: %f\n", cidade, densidadepopulacional);
+        printf("carta 2 - %s: %f\n", cidade2, densidadepopulacional2);
         printf("Resultado: Carta 1 %s Venceu!\n", cidade);
-    }
-    
-    if (pibpercapita > pibpercapita2)
-    {
-        printf("Resultado: Carta 1 %s Venceu!\n", cidade);
-    }
-    else
-    {
-        printf("Resultado: Carta 2 %s Venceu!\n",  cidade2);
     }
 
     return 0;
