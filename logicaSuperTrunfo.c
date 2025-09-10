@@ -13,11 +13,11 @@ int main() {
     unsigned int populacao, populacao2;
     float area, pib;
     float area2, pib2;
-    float densidadepopulacional, densidadepopulacional2;
-    float pibpercapita, pibpercapita2;
+    double densidadepopulacional, densidadepopulacional2;
+    double pibpercapita, pibpercapita2;
 
-    densidadepopulacional = (populacao / area);
-    densidadepopulacional2 = (populacao2 / area2);
+    densidadepopulacional = populacao / area;
+    densidadepopulacional2 = populacao2 / area2;
     pibpercapita = (pib / populacao);
     pibpercapita2 = (pib2 / populacao2);
 
@@ -97,14 +97,14 @@ int main() {
     
     if (densidadepopulacional > densidadepopulacional2)
     {
-        printf("Carta 1 - %s: %f\n", cidade, densidadepopulacional);
-        printf("carta 2 - %s: %f\n", cidade2, densidadepopulacional2);
+        printf("Carta 1 - %s: %.2f\n", cidade, densidadepopulacional);
+        printf("carta 2 - %s: %.2f\n", cidade2, densidadepopulacional2);
         printf("Resultado: Carta 2 %s Venceu!\n", cidade2);
     }
     else
     {
-        printf("Carta 1 - %s: %f\n", cidade, densidadepopulacional);
-        printf("carta 2 - %s: %f\n", cidade2, densidadepopulacional2);
+        printf("Carta 1 - %s: %.2f\n", cidade, densidadepopulacional);
+        printf("carta 2 - %s: %.2f\n", cidade2, densidadepopulacional2);
         printf("Resultado: Carta 1 %s Venceu!\n", cidade);
     }
 
